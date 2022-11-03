@@ -1,0 +1,35 @@
+# Insertamos al cliente Pepe
+mutation {
+  addCliente( nombre:"Pepe", telefono:"666 666 666") {
+    id
+    nombre
+    telefono
+  }
+}
+
+# Insertamos al cliente Juan
+mutation {
+  addCliente( nombre:"Juan", telefono:"356 356 356") {
+    id
+    nombre
+    telefono
+  }
+}
+
+# Consultamos el listado de clientes
+{
+  clientes {
+    id
+    nombre
+    telefono
+  }
+}
+
+# Consultamos el cliente 1
+{
+  cliente(id: 1) {
+    id
+    nombre
+    telefono
+  }
+}

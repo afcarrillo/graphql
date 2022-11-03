@@ -1,0 +1,6 @@
+const getFavorites = () => {
+  return Favorite.findAll().then((favorites) => favorites);
+};
+
+
+favorites: () => getFavorites(),
